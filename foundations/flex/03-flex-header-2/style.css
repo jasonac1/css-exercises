@@ -12,6 +12,9 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
 }
 
 .profile-image {
@@ -29,12 +32,33 @@ body {
   font-style: italic;
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.links {
+  margin: 0; /* remember uls have default margin-padding */
+  padding: 0;
+
+  display: flex;
+  gap: 16px;
+}
+
 button {
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
-  padding: 8px 24px;
+  height: 32px;
+  padding: 4px 24px;
 }
 
 a {
